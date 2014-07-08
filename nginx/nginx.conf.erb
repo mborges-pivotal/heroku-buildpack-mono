@@ -30,7 +30,7 @@ http {
         listen <%= ENV['PORT'] %>;
 
         location / {
-            fastcgi_pass unix:/app/nginx/nginx.socket;
+            fastcgi_pass unix:/app/nginx/sockets/nginx.socket;
             include fastcgi_params;
         }
     }
